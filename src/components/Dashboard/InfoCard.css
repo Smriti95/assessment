@@ -1,0 +1,82 @@
+.tasksCompletedCard{
+    background-color: white;
+    padding-top: 3%;
+    box-shadow: 0px 11px 36px -15px lightgrey;
+}
+
+.tasksCompleted{
+    font-size: 21px;
+    color: grey;
+    margin-left: 15%;
+}
+
+.completed{
+    color: blue;
+    font-size: 67px;
+}
+
+.tasksNumberContainer{
+    margin-left: 14%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.totalTaskContainer {
+    float: right;
+    margin-right: 80%;
+    margin-top: -9%;
+}
+
+.totalTasks{
+    font-size: 29px;
+    color: grey;
+}
+
+.latestTasksCard{
+    background-color: white;
+    margin-top: 4% !important;
+    padding-top: 3%;
+    box-shadow: 0px 11px 36px -15px lightgrey;
+}
+
+.latestCreatedText{
+    color: grey;
+    font-size: 21px;
+    padding-left: 16%;
+}
+
+.list{
+    padding-left: 10%;
+}
+
+li{
+    color: grey;
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 768px){
+    .tasksCompletedCard {
+        background-color: white;
+        padding-top: 3%;
+        border-radius: 17px;
+        margin-right: 5% !important;
+        box-shadow: 0px 11px 36px -15px lightgrey;
+        margin-top: 4% !important;
+    }
+    .latestTasksCard {
+        background-color: white;
+        margin-top: 4% !important;
+        padding-top: 3%;
+        border-radius: 17px;
+        box-shadow: 0px 11px 36px -15px lightgrey;
+    }
+    .infoCardContainer {
+        width: 122% !important;
+        margin-left: 5%;
+    }
+    .totalTaskContainer {
+        float: right;
+        margin-right: 86%;
+        margin-top: -7%;
+    }
+}

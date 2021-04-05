@@ -1,0 +1,41 @@
+.listItem {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    align-content: center;
+    display: flex;
+}
+
+.taskName {
+    margin-left: 3%;
+    width: 50%;
+}
+
+.checkbox {
+    margin-left: 6%;
+}
+
+.editIcon {
+    margin-left: 40%;
+}
+
+.deleteIcon{
+    margin-right: 4%;
+}
+
+@media only screen and (max-width: 320px){
+    .searchIcon {
+        margin-left: -28px;
+        color: darkslategrey;
+        margin-top: 3%;
+        margin-right: 12%;
+    }
+
+    .search {
+        border: none;
+        background-color: lightgrey;
+        padding: 4%;
+        margin-right: 2%;
+        margin-left: -4%;
+        outline: none;
+    }
+}

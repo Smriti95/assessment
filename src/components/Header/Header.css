@@ -1,0 +1,132 @@
+img{
+    width: 18%;
+}
+
+.logoutButton{
+    border: none;
+    background-color: white;
+    font-size: 17px;
+    color: grey;
+    margin-right: 1%;
+    float: right;
+    margin-top: -13%;
+}
+
+.headerContainer{
+    padding: 3%;
+    width: 98%;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 11px 36px -15px lightgrey;
+    margin-left: -2%;
+}
+
+.userName{
+    font-size: 18px;
+    color: grey;
+    float: right;
+    margin-right: 64%;
+    margin-top: 6%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    img{
+        width: 11%;
+        padding-left: 6%;
+    }
+
+    .userName {
+        font-size: 21px;
+        color: grey;
+        float: right;
+        margin-right: 73%;
+        margin-top: 4%;
+    }
+
+    .logoutButton {
+        border: none;
+        background-color: white;
+        font-size: 20px;
+        color: grey;
+        margin-right: 8%;
+        float: right;
+        margin-top: -8%;
+    }
+
+    .headerContainer{
+        padding: 0;
+        width: auto;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 0px 11px 36px -15px lightgrey;
+        margin-left: -2%;
+    }
+}
+
+@media only screen and (min-width: 1023px) and (max-width:1366px){
+    img {
+        width: 6%;
+        padding-left: 10%;
+    }
+
+    .userName {
+        font-size: 19px;
+        color: grey;
+        float: right;
+        margin-right: 77%;
+        margin-top: 2%;
+    }
+
+    .logoutButton {
+        border: none;
+        background-color: white;
+        font-size: 16px;
+        color: grey;
+        margin-right: 12%;
+        float: right;
+        margin-top: -4.5%;
+    }
+
+    .headerContainer{
+        padding: 0;
+        width: auto;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 0px 11px 36px -15px lightgrey;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 1367px){
+    img {
+        width: 4%;
+        padding-left: 10%;
+    }
+
+    .userName {
+        font-size: 18px;
+        color: grey;
+        float: right;
+        margin-right: 82%;
+        margin-top: 1.5%;
+    }
+
+    .logoutButton {
+        border: none;
+        background-color: white;
+        font-size: 16px;
+        color: grey;
+        margin-right: 12%;
+        float: right;
+        margin-top: -3%;
+    }
+
+    .headerContainer{
+        padding: 0;
+        width: auto;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 0px 15px 22px -15px lightgrey;
+        margin-left: 0;
+    }
+}

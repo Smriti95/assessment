@@ -1,0 +1,106 @@
+.loginModalContainer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    outline: none !important;
+    border-radius: 10px;
+    width: 93%;
+}
+
+.loginTitle{
+    padding: 8%;
+    font-size: 25px;
+}
+
+.formContainer{
+    padding: 0 8% 8% 8%;
+}
+
+.loginField{
+    width: 90%;
+    background-color: lightblue;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.loginButton{
+    width: 99%;
+    background-color: blue;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.errorText{
+    color: red
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .loginModalContainer{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: white;
+        outline: none !important;
+        border-radius: 10px;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
+    .loginModalContainer{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: white;
+        outline: none !important;
+        border-radius: 10px;
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 1366px){
+    .loginModalContainer{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: white;
+        outline: none !important;
+        border-radius: 10px;
+        width: 35%;
+    }
+    .loginField{
+        width: 91%;
+        background-color: lightblue;
+        border: none;
+        padding: 14px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        outline: none;
+    }
+    .loginButton {
+        width: 98%;
+        background-color: blue;
+        border: none;
+        padding: 14px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 16px;
+        outline: none;
+    }
+}
