@@ -43,7 +43,6 @@ export const getAllTasks = () => {
                         tasksCompleted: tasksCompleted,
                         latestTasks: allTasks.length > 2 ? latestTasks : allTasks
                     }
-                    console.log(dashboardData, "dash")
                     dispatch(setAllTasks(allTasks))
                     dispatch(setDashboardData(dashboardData))
                 }

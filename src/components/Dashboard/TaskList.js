@@ -43,11 +43,11 @@ class TaskList extends React.Component{
     render(){
 
         const { listLength, listItem } = this.props
-
+        
         return(
             <div className="listItem">
                 <input className="checkbox" type="checkbox" checked={this.state.checked} onChange={this.onCheckHandler}/>
-                <div className="taskName" style={listItem.completed ? {textDecoration: "line-through", color: "grey"} : {color: "blue"}}>{listItem.name}</div>
+                <div className="taskName" style={listItem.completed || this.state.checked ? {textDecoration: "line-through", color: "grey"} : {color: "blue"}}>{listItem.name}</div>
                 <EditIcon className="editIcon" onClick={this.onEditHandler}/>
                 <DeleteIcon className="deleteIcon" onClick={this.onDeleteHandler}/>
                 <EditTask open={this.state.openEdit} taskName={listItem.name} id={listItem.id} completed={listItem.completed} onClose={this.onCloseEditHandler}/>
