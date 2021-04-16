@@ -10,33 +10,6 @@ export const setDashboardData = value => {
     }
 }
 
-// export const getDashboardData = () => {
-//     return dispatch => {
-//         axios.get(config.dashboardData)
-//         .then(res => {
-//             console.log(res.data, "res data")
-//             let data = {}
-//             data.tasksCompleted = res.data.tasksCompleted
-//             data.totalTasks = res.data.totalTasks
-//         })
-//         .catch(err => {
-//             console.log(err)
-//         })
-//     }
-// }
-
-// export const setLatestTask = data => {
-//     return dispatch => {
-//         axios.post(config.updateLatestTask, data)
-//         .then(res => {
-//             dispatch(getDashboardData())
-//         })
-//         .catch(err => {
-//             console.log(err)
-//         })
-//     }
-// }
-
 export const setAllTasks = value => {
     return{
         type: ActionType.ALL_TASKS,

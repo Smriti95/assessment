@@ -1,9 +1,84 @@
 .EditModalContainer{
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 49%;
+    top: 36%;
     transform: translate(-50%,-50%);
     background-color: white;
     outline: none !important;
-    border-radius: 3px;
+    border-radius: 15px;
+    width: 93%;
+}
+
+.editTaskTitle{
+    padding: 8%;
+    font-size: 21px;
+}
+
+.editTaskFormContainer{
+    padding: 0 8% 8% 8%;
+}
+
+.editTaskField {
+    width: 86%;
+    margin-left: 2%;
+    background-color: lightblue;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.editTaskButton {
+    width: 96%;
+    margin-left: 2%;
+    background-color: blue;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10%;
+}
+
+@media only screen and (width: 1024px){
+    .EditModalContainer {
+        position: absolute;
+        left: 49%;
+        top: 36%;
+        transform: translate(-50%,-50%);
+        background-color: white;
+        outline: none !important;
+        border-radius: 15px;
+        width: 28%;
+    }
+}
+
+@media only screen and (width: 768px){
+    .EditModalContainer {
+        position: absolute;
+        left: 49%;
+        top: 36%;
+        transform: translate(-50%,-50%);
+        background-color: white;
+        outline: none !important;
+        border-radius: 15px;
+        width: 38%;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+    .EditModalContainer {
+        position: absolute;
+        left: 49%;
+        top: 36%;
+        transform: translate(-50%,-50%);
+        background-color: white;
+        outline: none !important;
+        border-radius: 15px;
+        width: 21%;
+    }
 }

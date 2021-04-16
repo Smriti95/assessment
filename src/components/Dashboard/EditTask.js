@@ -26,10 +26,10 @@ const EditTask = (props) => {
             open={props.open}
         >
             <div className="EditModalContainer">
-                <div>Edit Task</div>
-                <form onSubmit={onClickHandler}>
-                    <input name="taskName" type="text" placeholder="Task Name" value={newTaskName} onChange={onChangeHandler} />
-                    <input type="submit" value="OK"/>
+                <div className="editTaskTitle">Edit Task</div>
+                <form className="editTaskFormContainer" onSubmit={onClickHandler}>
+                    <input className="editTaskField" name="taskName" type="text" placeholder="Task Name" value={newTaskName} onChange={onChangeHandler} />
+                    <input className="editTaskButton" type="submit" value="OK"/>
                 </form>
             </div>
         </Modal>

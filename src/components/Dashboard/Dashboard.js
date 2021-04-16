@@ -15,7 +15,7 @@ class DashboardComponent extends React.Component{
         this.state={
             latestTasks: [],
             searchText: "",
-            filteredTasks: []
+            filteredTasks: this.props && this.props.allTasks
         }
     }
 
@@ -25,9 +25,19 @@ class DashboardComponent extends React.Component{
 
     searchTextHandler = event => {
         event.preventDefault()
+        this.setState({searchText: event.target.value})
+        this.filterTasks(event.target.value)
+    }
+
+    filterTasks = (searchText) => {
         const filteredList = this.props.allTasks
-        filteredList.filter(ele => ele.name && ele.name.toLowerCase().includes(event.target.value))
-        this.setState({searchText: event.target.value, filteredTasks: filteredList})
+        let filList = []
+        filteredList.map(ele => {
+            if(ele.name.toLowerCase().includes(searchText)){
+                filList.push(filteredList.filter(list => list.name == ele.name)[0])
+            }
+        })
+        this.setState({filteredTasks: filList})
     }
 
     newTaskHandler = () => {
@@ -37,7 +47,6 @@ class DashboardComponent extends React.Component{
     render(){
         const { latestTasks, filteredTasks } = this.state
 
-        console.log(filteredTasks, "filtered tasks")
         return(
             <div className="dashboardComponent">
                 <InfoCards />
@@ -58,8 +67,8 @@ class DashboardComponent extends React.Component{
                     </Grid>
                 </div>
                 <div className="taskList">
-                    {this.props.allTasks.length > 0 && this.props.allTasks.map(ele => (
-                        <TaskList id={ele.id} listLength={this.props.allTasks.length} listItem={ele}/>
+                    {this.state.filteredTasks && this.state.filteredTasks.length > 0 && this.state.filteredTasks.map(ele => (
+                        <TaskList id={ele.id} listLength={this.state.filteredTasks.length} listItem={ele}/>
                     ))}
                 </div>
             </div>

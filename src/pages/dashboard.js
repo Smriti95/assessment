@@ -44,8 +44,8 @@ class Dashboard extends React.Component {
                         open={noTask}
                     >
                         <div className="noTaskModal">
-                            <div>You have no task.</div>
-                            <button onClick={this.onClickHandler}>+ New Task</button>
+                            <div className="noTaskTitle">You have no task.</div>
+                            <button className="addTaskButton" onClick={this.onClickHandler}>+ New Task</button>
                         </div>
                     </Modal>
                 ) : (

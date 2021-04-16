@@ -14,13 +14,13 @@ const Header = (props) => {
     const logoutHandler = () => {
         props.history.push('/')
         dispatch(loginPopupHandler(true))
-        dispatch(loginSuccess(false))
+        dispatch(loginSuccess(true))
     }
 
     return(
         <div className="headerContainer">
             <img src={ProfileImage} alt="Profile Image" />
-            <div className="userName">test01</div>
+            <div className="userName">{userName}</div>
             <button className="logoutButton" onClick={logoutHandler}>Logout</button>
         </div>
     )
